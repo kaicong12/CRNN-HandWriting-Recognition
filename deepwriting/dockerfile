@@ -1,0 +1,6 @@
+FROM tensorflow/tensorflow:latest-gpu
+
+RUN apt-get update && apt-get install ffmpeg libsm6 libxext6  -y
+RUN pip install scikit-learn matplotlib svgwrite opencv-python
+
+ENV PYTHONPATH=$PYTHONPATH:./source
