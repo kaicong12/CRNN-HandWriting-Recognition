@@ -348,7 +348,7 @@ def process_dataset(args, dataset, out_file):
     if isinstance(dataset['preprocessing'], np.ndarray):
         dataset['preprocessing'] = dataset['preprocessing'].tolist()
 
-    if args.fixed_length_chunks is not None:
+    if args.fixed_unks is not None:
         if args.fixed_length_chunks[-1] == 'r':
             dataset = split_into_fixed_length_chunks(dataset, int(args.fixed_length_chunks[:-1]), keep_residuals=True)
         else:

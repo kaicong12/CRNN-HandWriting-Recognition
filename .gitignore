@@ -101,6 +101,7 @@ ENV/
 .mypy_cache/
 
 # pycharm
+.DS_Store
 /.idea
 deepwriting/.idea
 
@@ -110,7 +111,7 @@ deepwriting/runs_evaluation/
 deepwriting/data/
 deepwriting/experiments/
 deepwriting/data_images/
-deepwriting/explore/
+deepwriting/data_exploration/
 
 # OCR
 data/
